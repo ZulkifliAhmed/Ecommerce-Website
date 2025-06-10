@@ -1,5 +1,6 @@
 let cart = document.querySelector(".cart"),
   itemsCart = document.querySelector(".items-in-cart"),
+  menu = document.querySelector("#menu"),
   totalCartPrice = document.querySelector("#cart-price"),
   totalCartItems = document.querySelector("#cart-items"),
   itemInCart = document.querySelector("#item-in-cart"),
@@ -12,6 +13,15 @@ function openCart() {
 function closeCart() {
   cart.classList.remove("active");
 }
+
+// Open & Close Menu
+function openMenu() {
+  menu.classList.add("active");
+}
+function closeMenu() {
+  menu.classList.remove("active");
+}
+
 
 // Add Items to Cart
 let productsInCart,
