@@ -4,6 +4,7 @@ let cart = document.querySelector(".cart"),
   totalCartPrice = document.querySelector("#cart-price"),
   totalCartItems = document.querySelector("#cart-items"),
   itemInCart = document.querySelector("#item-in-cart"),
+  pigImage = document.querySelector("#pig-img"),
   cartSubtotal = document.querySelector("#cart-subtotal");
 
 // Open & Close Cart
@@ -22,6 +23,10 @@ function closeMenu() {
   menu.classList.remove("active");
 }
 
+// Change Item Image
+function changeItemImage(img){
+  pigImage.src = img;
+}
 
 // Add Items to Cart
 let productsInCart,
