@@ -34,23 +34,26 @@
                 </div>
             </div>
             <!-- Nav Links -->
-            <nav>
-                <div class="links container">
-                    <ul>
-                        <li class="active"><a href>home</a></li>
-                        <li><a href>hall products</a></li>
-                        <li><a href>about us</a></li>
-                        <li><a href>contact</a></li>
-                    </ul>
-                    <!-- Login Sign up -->
-                    <div class="login-signup">
-                        <a href>login <i
-                                class="fa-solid fa-right-to-bracket"></i></a>
-                        <a href>sign up <i
-                                class="fa-solid fa-user-plus"></i></a>
-                    </div>
+              <nav>
+            <div class="links container">
+                <i onclick="openMenu()" class="fa-solid fa-bars btn-open-menu"></i>
+                <ul id="menu">
+                    <span onclick="closeMenu()" class="bg-overlay"></span>
+                    <i onclick="closeMenu()" class="fa-regular fa-circle-xmark btn-close-menu"></i>
+                    <img class="logo-menu" src="img/logo-black.png" alt="">
+                    
+                    <li class="active"><a href="">home</a></li>
+                    <li><a href="">all products</a></li>
+                    <li><a href="">about us</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+                <!-- Login Sign up -->
+                <div class="login-signup">
+                    <a href="">login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="">sign up <i class="fa-solid fa-user-plus"></i></a>
                 </div>
-            </nav>
+            </div>
+        </nav>
         </header>
         <!-- Shop Cart -->
         <div class="cart">

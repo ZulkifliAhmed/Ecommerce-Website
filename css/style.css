@@ -1032,3 +1032,35 @@ header .links ul .btn-close-menu {
 .items-detail .details-item .icons span:hover {
   background-color: var(--main-color);
 }
+/* Resopnsive Item Detail Page */
+@media (max-width:1000px) {
+    .items-detail .container{
+        flex-direction: column;
+    }
+    .items-detail .img-item{
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .items-detail .details-item{
+        width: 100%;
+    }
+}
+@media (max-width:700px) {
+    .items-detail .img-item{
+        width: 80%;
+    }
+}
+@media (max-width:500px){
+    .items-detail .details-item h1{
+        font-size: 20px;
+    }
+    .items-detail .details-item .text-p{
+        font-size: 14px;
+    }
+    .items-detail .details-item h4{
+        font-size: 16px;
+    }
+    .items-detail .details-item button{
+        font-size: 16px;
+    }
+}
