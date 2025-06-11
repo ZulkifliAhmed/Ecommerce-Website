@@ -79,16 +79,106 @@
                 
             </div>
          </div>
-         <div class="all-products">
+         <section class="all-products">
             <div class="container">
+                <span onclick="openCloseFilter()" class="btn-filter">
+                    filter <i class="fa-solid fa-filter"></i>
+                </span>
                 <div class="filter">
-
+                    <h2>filter</h2>
+                    <div class="filter-item">
+                        <h4>categorie</h4>
+                        <div class="content">
+                            <div class="item">
+                                <span>phones</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>tablets</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>electronic</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>tv</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>fashion</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>watches</span>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <h4>brand</h4>
+                        <div class="content">
+                            <div class="item">
+                                <span>apple</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>intel</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>0ppo</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>xiaomi</span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span>huawei</span>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <h4>color</h4>
+                        <div class="content">
+                            <div class="item">
+                                <span class="color" style="background: red;"></span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span class="color" style="background: yellow;"></span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span class="color" style="background: green;"></span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span class="color" style="background: blue;"></span>
+                                <input type="checkbox">
+                            </div>
+                            <div class="item">
+                                <span class="color" style="background: black;"></span>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="products-div" id="products-div">
 
                 </div>
             </div>
-         </div>
+            <div class="pagination">
+                <span class="btn-page prev"><i class="fa-solid fa-backward-step"></i></span>
+                <a href="#"><span class="num-page active">1</span></a>
+                <a href="#"><span class="num-page">2</span></a>
+                <a href="#"><span class="num-page">3</span></a>
+                <a href="#"><span class="num-page">4</span></a>
+                <span class="btn-page next"><i class="fa-solid fa-forward-step"></i></span>
+            </div>
+         </section>
         <!-- Footer -->
         <footer>
             <div class="container">

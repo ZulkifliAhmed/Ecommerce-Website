@@ -1075,8 +1075,8 @@ text-align: center;
   color: var(--main-color);
 }
 .top-page p{
-  margin: auto;
   width: 60%;
+  margin: auto;
   font-size: 18px;
 }
 .all-products .container{
@@ -1110,127 +1110,114 @@ text-align: center;
   justify-content: space-between;
   align-items: center;
 }
-.all-products .filter .filter_item .item .color{
+.all-products .filter .filter-item .item .color{
   width: 20px;
   height: 20px;
   border-radius: 5px;
 }
 .all-products .products-div{
-    width: calc(100% - 300px);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5%;
+  width: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5%;
 }
-
-
-
-
-
-
-
-
-.all_products .products_dev .product{
-    width: 22%;
-    margin-bottom: 30px;
+.all-products .products-div .product{
+  width: 22%;
+  margin-bottom: 30px;
 }
-
-
 .pagination{
-    padding: 10px 20px;
-    background: #fff;
-    border: 1px solid var(--border-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: max-content;
-    margin: auto;
-    margin-bottom: 40px;
+  width: max-content;
+  padding: 10px 20px;
+  margin: auto;
+  margin-bottom: 40px;
+  border: 1px solid var(--border-color);
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination .btn-page{
+  padding: 0 15px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.pagination .btn-page:hover{
+  color: var(--main-color);
+}
+.pagination .num-page{
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid transparent;
+}
+.pagination .num-page.active,
+.pagination .num-page:hover{
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+}
+.all-products .btn-filter{
+  display: none;
 }
 
-.pagination .btn_page{
-    font-size: 22px;
-    padding: 0 15px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.pagination .btn_page:hover{
-    color: var(--main-color);
-}
-.pagination .num_page{
-    border: 1px solid transparent;
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 18px;
-}
-.pagination .num_page.active,
-.pagination .num_page:hover{
-    border: 1px solid var(--main-color);
-    cursor: pointer;
-}
-.all_products .btn_filter{
-    display: none;
-}
-
-
+ /* Resopnsive All Products  */
 @media (max-width:1500px) {
-    .all_products .products_dev .product{
-        width: 31%;
-    }
-
+  .all-products .products-div .product{
+    width: 31%;
+  }
 }
 @media (max-width:1000px){
-    .all_products .container{
-        position: relative;
-        padding-top: 60px;
+    .all-products .container{
+      padding-top: 60px;
+      position: relative;
     }
-    .all_products .filter{
-        position: absolute;
-        left: 0;
-        top: 60px;
-        width: 40%;
-        opacity: 0;
-        z-index: -100;
-        transition: 0.3s opacity ease-in-out;
+    .all-products .filter{
+      width: 40%;
+      position: absolute;
+      left: 0;
+      top: 60px;
+      opacity: 0;
+      z-index: -100;
+      transition: var(--main-transition) opacity;
     }
-    .all_products .filter.active{
-        opacity: 1;
-        z-index: 100;
+    .all-products .filter.active{
+      opacity: 1;
+      z-index: 100;
     }
-
-
-    .all_products .products_dev{
-        width: 100%;
-        gap: 0;
-        justify-content: space-between;
+    .all-products .products-div{
+      width: 100%;
+      gap: 0;
+      justify-content: space-between;
     }
-    .all_products .btn_filter{
-        display: block;
-        position: absolute;
-        top: 0px;
-        padding: 12px 30px;
-        background: var(--main-color);
-        border-radius: 5px;
-        font-size: 18px;
-        text-transform: capitalize;
+    .all-products .btn-filter{
+      padding: 12px 30px;
+      display: block;
+      position: absolute;
+      top: 0px;
+      font-size: 18px;
+      text-transform: capitalize;
+      border-radius: 5px;
+      background-color: var(--main-color);
+      cursor: pointer;
     }
 }
 @media (max-width: 650px) {
-    .all_products .products_dev .product{
-        width: 48%;
+    .all-products .products-div .product{
+      width: 48%;
     }
-    .top_page h1{
-        font-size: 22px;
+    .top-page h1{
+      font-size: 22px;
     }
-    .top_page p{
-        font-size: 14px;
-        width: 100%;
+    .top-page p{
+      width: 100%;
+      font-size: 14px;
     }
-    .top_page{
-        padding-top: 10px;
+    .top-page{
+      padding-top: 10px;
     }
 }
 @media (max-width: 450px){
-    .all_products .filter{
-        width: 100%;
+    .all-products .filter{
+      width: 100%;
     }
 }
