@@ -48,6 +48,7 @@
     font-size: 70px;
     font-weight: 500;
     color: var(--main-color);
+    text-transform: capitalize;
 }
 
 .about-us .about-right button {

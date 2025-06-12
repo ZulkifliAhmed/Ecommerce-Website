@@ -133,7 +133,7 @@
     color: var(--dark-color);
     border: 2px solid #c5c5c5;
 }
-
+/* Responsive */
 @media (max-width:500px) {
     .form-container {
         width: 100%;
