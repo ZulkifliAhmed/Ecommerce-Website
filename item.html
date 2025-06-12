@@ -57,23 +57,22 @@
         </header>
         <!-- Shop Cart -->
         <div class="cart">
-            <div class="top-cart">
-                <h3>my cart <span id="item-in-cart">(0 item in cart)</span></h3>
-                <span class="close-cart" onclick="closeCart()"><i
-                        class="fa-regular fa-circle-xmark"></i></span>
+        <div class="top-cart">
+            <h3>my cart <span id="item-in-cart">(0 item in cart)</span></h3>
+            <span class="close-cart" onclick="closeCart()"><i class="fa-regular fa-circle-xmark"></i></span>
+        </div>
+        <div class="items-in-cart"></div>
+        <div class="buttom-cart">
+            <div class="total">
+                <p>Cart Subtotal</p>
+                <div class="price-cart-total" id="cart-subtotal">$0</div>
             </div>
-            <div class="items-in-cart"></div>
-            <div class="buttom-cart">
-                <div class="total">
-                    <p>Cart Subtotal</p>
-                    <div class="price-cart-total" id="cart-subtotal">$0</div>
-                </div>
-                <div class="button-cart">
-                    <a href class="btn-cart">proceed to checkout</a>
-                    <button class="btn-cart trans-bg">shop more</button>
-                </div>
+            <div class="button-cart">
+                <a href="checkout.html" class="btn-cart">proceed to checkout</a>
+                <button onclick="closeCart()" class="btn-cart trans-bg">shop more</button>
             </div>
         </div>
+    </div>
         <!-- Items Detail -->
         <div class="items-detail">
             <div class="container">
