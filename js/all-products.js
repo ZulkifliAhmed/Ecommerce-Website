@@ -28,7 +28,7 @@ fetch("js/items.json")
                 <img src="${products.img_hover}" alt="${products.name}"
                     class="img-hover">
             </div>
-            <h3 class="name-product"><a href="#">${products.name}</a></h3>
+            <h3 class="name-product"><a href="">${products.name}</a></h3>
             <div class="stars">
                <i class="fa-solid fa-star"></i>
                <i class="fa-solid fa-star"></i>
